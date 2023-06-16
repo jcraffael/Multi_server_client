@@ -1,0 +1,371 @@
+[
+ {
+  "directory": "/home/cjiang/programming/30dayMakeCppServer/code/day06",
+  "arguments": [
+   "g++",
+   "-I./src",
+   "-I./src/src",
+   "-std=c++17",
+   "-MMD",
+   "-MP",
+   "-g",
+   "-c",
+   "src/Server.cpp",
+   "-o",
+   "build/./src/Server.cpp.o"
+  ],
+  "file": "src/Server.cpp"
+ },
+ {
+  "directory": "/home/cjiang/programming/30dayMakeCppServer/code/day06",
+  "arguments": [
+   "g++",
+   "-I./src",
+   "-I./src/src",
+   "-std=c++17",
+   "-MMD",
+   "-MP",
+   "-g",
+   "-c",
+   "src/InetAddress.cpp",
+   "-o",
+   "build/./src/InetAddress.cpp.o"
+  ],
+  "file": "src/InetAddress.cpp"
+ },
+ {
+  "directory": "/home/cjiang/programming/30dayMakeCppServer/code/day06",
+  "arguments": [
+   "g++",
+   "-I./src",
+   "-I./src/src",
+   "-std=c++17",
+   "-MMD",
+   "-MP",
+   "-g",
+   "-c",
+   "src/server.cpp",
+   "-o",
+   "build/./src/server.cpp.o"
+  ],
+  "file": "src/server.cpp"
+ },
+ {
+  "directory": "/home/cjiang/programming/30dayMakeCppServer/code/day06",
+  "arguments": [
+   "g++",
+   "-I./src",
+   "-I./src/src",
+   "-std=c++17",
+   "-MMD",
+   "-MP",
+   "-g",
+   "-c",
+   "src/util.cpp",
+   "-o",
+   "build/./src/util.cpp.o"
+  ],
+  "file": "src/util.cpp"
+ },
+ {
+  "directory": "/home/cjiang/programming/30dayMakeCppServer/code/day06",
+  "arguments": [
+   "g++",
+   "-I./src",
+   "-I./src/src",
+   "-std=c++17",
+   "-MMD",
+   "-MP",
+   "-g",
+   "-c",
+   "src/EventLoop.cpp",
+   "-o",
+   "build/./src/EventLoop.cpp.o"
+  ],
+  "file": "src/EventLoop.cpp"
+ },
+ {
+  "directory": "/home/cjiang/programming/30dayMakeCppServer/code/day06",
+  "arguments": [
+   "g++",
+   "-I./src",
+   "-I./src/src",
+   "-std=c++17",
+   "-MMD",
+   "-MP",
+   "-g",
+   "-c",
+   "src/Channel.cpp",
+   "-o",
+   "build/./src/Channel.cpp.o"
+  ],
+  "file": "src/Channel.cpp"
+ },
+ {
+  "directory": "/home/cjiang/programming/30dayMakeCppServer/code/day06",
+  "arguments": [
+   "g++",
+   "-I./src",
+   "-I./src/src",
+   "-std=c++17",
+   "-MMD",
+   "-MP",
+   "-g",
+   "-c",
+   "src/Epoll.cpp",
+   "-o",
+   "build/./src/Epoll.cpp.o"
+  ],
+  "file": "src/Epoll.cpp"
+ },
+ {
+  "directory": "/home/cjiang/programming/30dayMakeCppServer/code/day06",
+  "arguments": [
+   "g++",
+   "-I./src",
+   "-I./src/src",
+   "-std=c++17",
+   "-MMD",
+   "-MP",
+   "-g",
+   "-c",
+   "src/Socket.cpp",
+   "-o",
+   "build/./src/Socket.cpp.o"
+  ],
+  "file": "src/Socket.cpp"
+ },
+ {
+  "directory": "/home/cjiang/programming/30dayMakeCppServer/code/day06",
+  "arguments": [
+   "g++",
+   "-I./src",
+   "-I./src/src",
+   "-std=c++17",
+   "-MMD",
+   "-MP",
+   "-g",
+   "-c",
+   "src/client.cpp",
+   "-o",
+   "build/./src/client.cpp.o"
+  ],
+  "file": "src/client.cpp"
+ },
+ {
+  "directory": "/home/cjiang/programming/New_multi_ser_cli",
+  "arguments": [
+   "g++",
+   "-I./src",
+   "-I./src/include",
+   "-I./src/libshared",
+   "-std=c++17",
+   "-MMD",
+   "-MP",
+   "-g",
+   "-c",
+   "src/InetAddress.cpp",
+   "-o",
+   "build/./src/InetAddress.cpp.o"
+  ],
+  "file": "src/InetAddress.cpp"
+ },
+ {
+  "directory": "/home/cjiang/programming/New_multi_ser_cli",
+  "arguments": [
+   "g++",
+   "-I./src",
+   "-I./src/include",
+   "-I./src/libshared",
+   "-std=c++17",
+   "-MMD",
+   "-MP",
+   "-g",
+   "-c",
+   "src/server.cpp",
+   "-o",
+   "build/./src/server.cpp.o"
+  ],
+  "file": "src/server.cpp"
+ },
+ {
+  "directory": "/home/cjiang/programming/New_multi_ser_cli",
+  "arguments": [
+   "g++",
+   "-I./src",
+   "-I./src/include",
+   "-I./src/libshared",
+   "-std=c++17",
+   "-MMD",
+   "-MP",
+   "-g",
+   "-c",
+   "src/util.cpp",
+   "-o",
+   "build/./src/util.cpp.o"
+  ],
+  "file": "src/util.cpp"
+ },
+ {
+  "directory": "/home/cjiang/programming/New_multi_ser_cli",
+  "arguments": [
+   "g++",
+   "-I./src",
+   "-I./src/include",
+   "-I./src/libshared",
+   "-std=c++17",
+   "-MMD",
+   "-MP",
+   "-g",
+   "-c",
+   "src/mes_process.cpp",
+   "-o",
+   "build/./src/mes_process.cpp.o"
+  ],
+  "file": "src/mes_process.cpp"
+ },
+ {
+  "directory": "/home/cjiang/programming/New_multi_ser_cli",
+  "arguments": [
+   "g++",
+   "-I./src",
+   "-I./src/include",
+   "-I./src/libshared",
+   "-std=c++17",
+   "-MMD",
+   "-MP",
+   "-g",
+   "-c",
+   "src/EventLoop.cpp",
+   "-o",
+   "build/./src/EventLoop.cpp.o"
+  ],
+  "file": "src/EventLoop.cpp"
+ },
+ {
+  "directory": "/home/cjiang/programming/New_multi_ser_cli",
+  "arguments": [
+   "g++",
+   "-I./src",
+   "-I./src/include",
+   "-I./src/libshared",
+   "-std=c++17",
+   "-MMD",
+   "-MP",
+   "-g",
+   "-c",
+   "src/Channel.cpp",
+   "-o",
+   "build/./src/Channel.cpp.o"
+  ],
+  "file": "src/Channel.cpp"
+ },
+ {
+  "directory": "/home/cjiang/programming/New_multi_ser_cli",
+  "arguments": [
+   "g++",
+   "-I./src",
+   "-I./src/include",
+   "-I./src/libshared",
+   "-std=c++17",
+   "-MMD",
+   "-MP",
+   "-g",
+   "-c",
+   "src/utils.cpp",
+   "-o",
+   "build/./src/utils.cpp.o"
+  ],
+  "file": "src/utils.cpp"
+ },
+ {
+  "directory": "/home/cjiang/programming/New_multi_ser_cli",
+  "arguments": [
+   "g++",
+   "-I./src",
+   "-I./src/include",
+   "-I./src/libshared",
+   "-std=c++17",
+   "-MMD",
+   "-MP",
+   "-g",
+   "-c",
+   "src/Epoll.cpp",
+   "-o",
+   "build/./src/Epoll.cpp.o"
+  ],
+  "file": "src/Epoll.cpp"
+ },
+ {
+  "directory": "/home/cjiang/programming/New_multi_ser_cli",
+  "arguments": [
+   "g++",
+   "-I./src",
+   "-I./src/include",
+   "-I./src/libshared",
+   "-std=c++17",
+   "-MMD",
+   "-MP",
+   "-g",
+   "-c",
+   "src/libshared/libshared.cpp",
+   "-o",
+   "build/./src/libshared/libshared.cpp.o"
+  ],
+  "file": "src/libshared/libshared.cpp"
+ },
+ {
+  "directory": "/home/cjiang/programming/New_multi_ser_cli",
+  "arguments": [
+   "g++",
+   "-I./src",
+   "-I./src/include",
+   "-I./src/libshared",
+   "-std=c++17",
+   "-MMD",
+   "-MP",
+   "-g",
+   "-c",
+   "src/Socket.cpp",
+   "-o",
+   "build/./src/Socket.cpp.o"
+  ],
+  "file": "src/Socket.cpp"
+ },
+ {
+  "directory": "/home/cjiang/programming/New_multi_ser_cli",
+  "arguments": [
+   "g++",
+   "-I./src",
+   "-I./src/include",
+   "-I./src/libshared",
+   "-std=c++17",
+   "-MMD",
+   "-MP",
+   "-g",
+   "-c",
+   "src/Server.cpp",
+   "-o",
+   "build/./src/Server.cpp.o"
+  ],
+  "file": "src/Server.cpp"
+ },
+ {
+  "directory": "/home/cjiang/programming/New_multi_ser_cli",
+  "arguments": [
+   "g++",
+   "-I./src",
+   "-I./src/include",
+   "-I./src/libshared",
+   "-std=c++17",
+   "-MMD",
+   "-MP",
+   "-g",
+   "-c",
+   "src/client.cpp",
+   "-o",
+   "build/./src/client.cpp.o"
+  ],
+  "file": "src/client.cpp"
+ }
+]

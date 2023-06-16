@@ -1,0 +1,380 @@
+@startuml
+enum "__pid_type" as C_0001735548386921279272
+enum C_0001735548386921279272 {
+F_OWNER_TID
+F_OWNER_PID
+F_OWNER_PGRP
+F_OWNER_GID
+}
+class "Socket" as C_0001698085643853748980
+class C_0001698085643853748980 {
++Socket() : void
++Socket(int) : void
++~Socket() : void
+..
++accept() : int
++bind() : void
++connect() : void
++getFd() : int
++listen() : void
++setnonblocking() : void
+__
+-fd : int
+-serv_addr : InetAddress *
+}
+enum "std::byte" as C_0001195947699381904047
+enum C_0001195947699381904047 {
+}
+enum "std::align_val_t" as C_0000047105553628505027
+enum C_0000047105553628505027 {
+}
+enum "std::errc" as C_0000118351009949609628
+enum C_0000118351009949609628 {
+address_family_not_supported
+address_in_use
+address_not_available
+already_connected
+argument_list_too_long
+argument_out_of_domain
+bad_address
+bad_file_descriptor
+bad_message
+broken_pipe
+connection_aborted
+connection_already_in_progress
+connection_refused
+connection_reset
+cross_device_link
+destination_address_required
+device_or_resource_busy
+directory_not_empty
+executable_format_error
+file_exists
+file_too_large
+filename_too_long
+function_not_supported
+host_unreachable
+identifier_removed
+illegal_byte_sequence
+inappropriate_io_control_operation
+interrupted
+invalid_argument
+invalid_seek
+io_error
+is_a_directory
+message_size
+network_down
+network_reset
+network_unreachable
+no_buffer_space
+no_child_process
+no_link
+no_lock_available
+no_message_available
+no_message
+no_protocol_option
+no_space_on_device
+no_stream_resources
+no_such_device_or_address
+no_such_device
+no_such_file_or_directory
+no_such_process
+not_a_directory
+not_a_socket
+not_a_stream
+not_connected
+not_enough_memory
+not_supported
+operation_canceled
+operation_in_progress
+operation_not_permitted
+operation_not_supported
+operation_would_block
+owner_dead
+permission_denied
+protocol_error
+protocol_not_supported
+read_only_file_system
+resource_deadlock_would_occur
+resource_unavailable_try_again
+result_out_of_range
+state_not_recoverable
+stream_timeout
+text_file_busy
+timed_out
+too_many_files_open_in_system
+too_many_files_open
+too_many_links
+too_many_symbolic_link_levels
+value_too_large
+wrong_protocol_type
+}
+enum "std::_Ios_Fmtflags" as C_0001960776109358708386
+enum C_0001960776109358708386 {
+_S_boolalpha
+_S_dec
+_S_fixed
+_S_hex
+_S_internal
+_S_left
+_S_oct
+_S_right
+_S_scientific
+_S_showbase
+_S_showpoint
+_S_showpos
+_S_skipws
+_S_unitbuf
+_S_uppercase
+_S_adjustfield
+_S_basefield
+_S_floatfield
+_S_ios_fmtflags_end
+_S_ios_fmtflags_max
+_S_ios_fmtflags_min
+}
+enum "std::_Ios_Openmode" as C_0001451421978483453067
+enum C_0001451421978483453067 {
+_S_app
+_S_ate
+_S_bin
+_S_in
+_S_out
+_S_trunc
+_S_ios_openmode_end
+_S_ios_openmode_max
+_S_ios_openmode_min
+}
+enum "std::_Ios_Iostate" as C_0001258509410327385703
+enum C_0001258509410327385703 {
+_S_goodbit
+_S_badbit
+_S_eofbit
+_S_failbit
+_S_ios_iostate_end
+_S_ios_iostate_max
+_S_ios_iostate_min
+}
+enum "std::_Ios_Seekdir" as C_0001505460621293532935
+enum C_0001505460621293532935 {
+_S_beg
+_S_cur
+_S_end
+_S_ios_seekdir_end
+}
+enum "std::io_errc" as C_0000160400006972037320
+enum C_0000160400006972037320 {
+stream
+}
+enum "std::ios_base::event" as C_0000914564372844114041
+enum C_0000914564372844114041 {
+erase_event
+imbue_event
+copyfmt_event
+}
+enum "std::codecvt_base::result" as C_0002213829941719095205
+enum C_0002213829941719095205 {
+ok
+partial
+error
+noconv
+}
+enum "std::_Rb_tree_color" as C_0001265018680982897061
+enum C_0001265018680982897061 {
+_S_red
+_S_black
+}
+class "std::string" as C_0000159384585232022465
+class C_0000159384585232022465 {
+__
+}
+class "std::map<int,Channel *>" as C_0000922996343930198478
+class C_0000922996343930198478 {
+__
+}
+enum "std::_Manager_operation" as C_0000614493260059866535
+enum C_0000614493260059866535 {
+__get_type_info
+__get_functor_ptr
+__clone_functor
+__destroy_functor
+}
+class "std::function<void()>" as C_0001660784356362272037
+class C_0001660784356362272037 {
+__
+}
+class "std::vector<Channel *>" as C_0000920511443715524519
+class C_0000920511443715524519 {
+__
+}
+enum "RC" as C_0001871912627817001484
+enum C_0001871912627817001484 {
+RC_SUCCESS
+RC_MISS_ARGS
+RC_SOCKET_ERROR
+RC_CONNECTION_ERROR
+RC_ACCEPT_ERROR
+RC_RECV_ERROR
+RC_SENT_ERROR
+RC_GENERIC
+}
+class "mes_process" as C_0000194678836016621416
+class C_0000194678836016621416 {
++mes_process(char * buff, bool rec_buf) : void
++mes_process(int argc, char ** argv) : void
++~mes_process() : void
+..
++get_act() const : char *
++get_cont() const : char *
++get_message() const : mes_process::mes_buf *
++get_val() const : char *
+__
+-new_message : mes_process::mes_buf *
+}
+class "mes_process::mes_buf" as C_0001406391842573918345
+class C_0001406391842573918345 {
+__
++act : char[5]
++cont : char[80]
++val : char[40]
+}
+class "rep_process" as C_0001096214747237356424
+class C_0001096214747237356424 {
++rep_process() : void
++rep_process(char * buff) : void
++~rep_process() : void
+..
++get_message() const : rep_process::rep_buf *
++rec_code() const : short
++rec_val() const : char *
++set_code_val(std::string action, std::string key, std::string value) : void
+__
+-new_rep : rep_process::rep_buf *
+}
+class "rep_process::rep_buf" as C_0001425631079521478094
+class C_0001425631079521478094 {
+__
++k_val : char[40]
++res : short
+}
+class "InetAddress" as C_0001869894919194887127
+class C_0001869894919194887127 {
++InetAddress() : void
++InetAddress(const char * ip, uint16_t port) : void
++~InetAddress() : void
+__
++addr : struct sockaddr_in
++addr_len : socklen_t
+}
+class "Server" as C_0000896116164560655174
+class C_0000896116164560655174 {
++Server(EventLoop *) : void
++~Server() : void
+..
++handleReadEvent(int) : void
++newConnection(Socket * serv_sock) : void
+__
+-connections : std::map<int,Channel *>
+-loop : EventLoop *
+-servChannel : Channel *
+-serv_sock : Socket *
+}
+enum "EPOLL_EVENTS" as C_0000084264113123486773
+enum C_0000084264113123486773 {
+EPOLLIN
+EPOLLPRI
+EPOLLOUT
+EPOLLRDNORM
+EPOLLRDBAND
+EPOLLWRNORM
+EPOLLWRBAND
+EPOLLMSG
+EPOLLERR
+EPOLLHUP
+EPOLLRDHUP
+EPOLLEXCLUSIVE
+EPOLLWAKEUP
+EPOLLONESHOT
+EPOLLET
+}
+class "Channel" as C_0000784166665447249091
+class C_0000784166665447249091 {
++Channel(EventLoop * _loop, int _fd) : void
++~Channel() : void
+..
++enableReading() : void
++getEvents() : uint32_t
++getFd() : int
++getInEpoll() : bool
++getRevents() : uint32_t
++handleEvent() : void
++setCallback(std::function<void ()>) : void
++setInEpoll() : void
++setRevents(uint32_t) : void
+__
+-callback : std::function<void ()>
+-events : uint32_t
+-fd : int
+-inEpoll : bool
+-loop : EventLoop *
+-revents : uint32_t
+}
+class "EventLoop" as C_0000685381996221143758
+class C_0000685381996221143758 {
++EventLoop() : void
++~EventLoop() : void
+..
++loop() : void
++updateChannel(Channel *) : void
+__
+-ep : Epoll *
+-quit : bool
+}
+class "Epoll" as C_0002216791108279507173
+class C_0002216791108279507173 {
++Epoll() : void
++~Epoll() : void
+..
++addFd(int fd, uint32_t op) : void
++poll(int timeout = -1) : std::vector<Channel *>
++updateChannel(Channel *) : void
+__
+-epfd : int
+-events : struct epoll_event *
+}
+enum "__socket_type" as C_0000980368455285821131
+enum C_0000980368455285821131 {
+SOCK_STREAM
+SOCK_DGRAM
+SOCK_RAW
+SOCK_RDM
+SOCK_SEQPACKET
+SOCK_DCCP
+SOCK_PACKET
+SOCK_CLOEXEC
+SOCK_NONBLOCK
+}
+C_0001698085643853748980 --> C_0001869894919194887127 : -serv_addr
+C_0000922996343930198478 ..> C_0000784166665447249091
+C_0000920511443715524519 ..> C_0000784166665447249091
+C_0001406391842573918345 --+ C_0000194678836016621416
+C_0001096214747237356424 ..> C_0000159384585232022465
+C_0001425631079521478094 --+ C_0001096214747237356424
+C_0000896116164560655174 ..> C_0000685381996221143758
+C_0000896116164560655174 ..> C_0001698085643853748980
+C_0000896116164560655174 --> C_0000685381996221143758 : -loop
+C_0000896116164560655174 --> C_0001698085643853748980 : -serv_sock
+C_0000896116164560655174 --> C_0000784166665447249091 : -servChannel
+C_0000896116164560655174 o-- C_0000922996343930198478 : -connections
+C_0000784166665447249091 ..> C_0000685381996221143758
+C_0000784166665447249091 ..> C_0001660784356362272037
+C_0000784166665447249091 --> C_0000685381996221143758 : -loop
+C_0000784166665447249091 o-- C_0001660784356362272037 : -callback
+C_0000685381996221143758 ..> C_0000784166665447249091
+C_0000685381996221143758 --> C_0002216791108279507173 : -ep
+C_0002216791108279507173 ..> C_0000784166665447249091
+C_0002216791108279507173 ..> C_0000920511443715524519
+
+'Generated with clang-uml, version 0.3.7
+'LLVM version Ubuntu clang version 15.0.7
+@enduml
