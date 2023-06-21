@@ -26,7 +26,7 @@ typedef struct mes_buf
 mes_buf *new_message;
 public:
     mes_process(char *buff, bool rec_buf);
-    mes_process(int argc, char** argv);
+    mes_process(int argc, char** argv, int *block);
     //void create_client_buffer(char *buff);
     inline char* get_act() const { return new_message->act;}
     inline char* get_cont() const { return new_message->cont;}

@@ -221,7 +221,7 @@ RC_GENERIC
 class "mes_process" as C_0000194678836016621416
 class C_0000194678836016621416 {
 +mes_process(char * buff, bool rec_buf) : void
-+mes_process(int argc, char ** argv) : void
++mes_process(int argc, char ** argv, int * block) : void
 +~mes_process() : void
 ..
 +get_act() const : char *

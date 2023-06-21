@@ -22,7 +22,7 @@ mes_process::~mes_process()
         delete new_message;
 }
 
-mes_process::mes_process(int argc, char** argv)
+mes_process::mes_process(int argc, char** argv, int *block)
 {
     new_message = new mes_buf();
     if(argc == 1)
@@ -44,15 +44,16 @@ mes_process::mes_process(int argc, char** argv)
         case 'l':
             construct_mbuf(new_message, "LOAD", optarg);
             break;
-
         case 'g':
             construct_mbuf(new_message, "GET", optarg);
             break;
-
         case 's':
             construct_mbuf(new_message, "SET", optarg);
             if(argc > 3)
                 memcpy(new_message->val, argv[3], BUF_VAL);
+            break;
+        case 'b':
+            *block = 1;
             break;
         case 'v':
             TRACE_LEVEL = 3;
@@ -66,15 +67,6 @@ mes_process::mes_process(int argc, char** argv)
     }
     //return mbuf;
 }
-
-
-// rep_process::rep_process(short res, const char *k_val)
-// {
-//     new_rep = new rep_buf();
-//     new_rep->res = res;
-//     if(k_val)
-//         memcpy(new_rep->k_val, k_val, BUF_VAL);
-// }
 
 rep_process::rep_process(char *buff)
 {

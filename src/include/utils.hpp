@@ -50,7 +50,7 @@ const option long_opts[] = {
         {"load", required_argument, nullptr, 'l'},
         {"get", required_argument, nullptr, 'g'},
         {"set", required_argument, nullptr, 's'},
-        {"blocking", required_argument, nullptr, 'b'},
+        {"blocking", no_argument, nullptr, 'b'},
         {"help", no_argument, nullptr, 'h'},
         {"verbose", no_argument, nullptr, 'v'},
         {nullptr, no_argument, nullptr, 0}
